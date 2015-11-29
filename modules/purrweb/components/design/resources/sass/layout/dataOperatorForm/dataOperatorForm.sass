@@ -1,0 +1,149 @@
+@import compass/css3
+select
+	option
+		display: block
+#dataOpeatorForm
+	overflow: hidden
+	margin-bottom: 30px 
+.dataOpeatorForm__col
+	max-width: 500px
+	min-width: 200px  
+	float: left 
+	margin-right: 10% 
+	margin-bottom: 7px 
+	width: 40% 
+.dataOpeatorForm__label
+	display: block
+	font-size: 1.6em
+	margin-bottom: 5px 
+	color: #9797A5
+	sup
+		color: #FF2626
+		position: relative
+		top: 3px  
+.dataOpeatorForm__footer
+	clear: both
+	text-align: center 
+	margin-top: 15px 
+#saveDataOpeatorBtn
+	padding: 0px 17px
+	margin-right: 15px  
+.dataOpeatorForm__row
+	margin-bottom: 23px 
+#f-operatorName, #f-operatorLogin, #f-operatorPassword
+	width: 100% - 16%
+	height: 35px
+	border: 1px solid #CACAD9
+	padding: 0 8%  
+	outline: none
+	font-size: 1.4em
+	&:focus
+		border: 1px solid #26c9ff
+#f-operatorAccount, #f_operatorAccount_chosen
+	width: 100% !important
+#f-operatorAccount:focus
+	border: 1px solid #26c9ff
+.chosen-container
+	position: relative
+	display: inline-block
+	vertical-align: middle
+.chosen-single
+	font-size: 1.3em 
+	border: 1px solid #CACAD9
+	width: 100% - 16%
+	padding: 0 8% 
+	outline: none
+	height: 30px 
+	display: block
+	line-height: 30px 
+	color: black 
+	position: relative
+	-ms-text-overflow: ellipsis 
+	text-overflow: ellipsis 
+	overflow: hidden
+	span
+		white-space: nowrap
+	&:after
+		content: "" 
+		position: absolute
+		display: block
+		right: 13px
+		top: 50%
+		margin-top: -3px
+		width: 11px
+		height: 6px
+		background: url(../i/filterNavArrows.png) 0px 0px no-repeat 
+.chosen-drop
+	background: #fff
+	border: 1px solid #26C9FF
+	position: absolute
+	top: 100%
+	left: -9999px
+	z-index: 1010
+	width: 100%
+	margin-top: 4px 
+.chosen-with-drop
+	.chosen-single
+		border: 1px solid #26C9FF
+	.chosen-drop
+		left: 0px
+.chosen-results
+	overflow-x: hidden
+	overflow-y: auto
+	li
+		height: 30px
+		line-height: 30px
+		font-size: 1.3em
+		padding: 0px 18px
+		-ms-text-overflow: ellipsis 
+		text-overflow: ellipsis 
+		overflow: hidden
+		&:hover
+			background: #DBDBEA
+.highlighted
+	background: #DBDBEA
+#f-operatorDescription
+	width: 100% - 16%
+	height: 101px
+	border: 1px solid #CACAD9
+	padding: 5% 8% 
+	outline: none
+	font-size: 1.4em
+.dataOpeatorForm__subRow__status
+	label
+		font-size: 1.6em
+.dataOpeatorForm__subRow__status
+	line-height: 39px 
+.base__cityItem
+	position: relative
+	margin-bottom: 10px 
+.i-deleteItem
+	display: block
+	width: 15px
+	height: 15px
+	position: absolute
+	right: 5px
+	top: 1px  
+	background: url(../i/deleteIco.png) 0px 0px no-repeat 
+	cursor: pointer 
+.viewFieldSet__enabled
+	display: block !important
+ul.viewFieldSet__content
+	border-bottom: 0 
+	li
+		font-size: 1.6em
+		margin-bottom: 12px 
+		a
+			color: #8a8b8c
+			&:hover
+				color: #0085b2  
+.chosen-search
+	padding: 5px
+	overflow: hidden
+	input
+		width: 86%
+		height: 26px 
+		border: 1px solid #cacad9
+		padding: 0px 10px
+		font-size: 1.4em   
+		background: white url(../i/search.png) 96% 5px no-repeat 

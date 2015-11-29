@@ -1,0 +1,47 @@
+@import compass/css3
+#statisticNav
+	float: right
+	width: 260px
+	background: #F0F0F7
+	padding-bottom: 5000px
+	margin-bottom: -5000px  
+.statisticNav__list
+	li
+		font-size: 1.8em 
+		overflow: hidden
+		a
+			color: #0085B2
+			line-height: 45px
+			display: block
+			width: 100%
+			height: 100%  
+			padding: 0 18px 
+			&:hover
+				background: #EBEBF3
+			span
+				display: inline-block
+				width: 100px 
+.statisticNav__list__link
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		right: 57px
+		top: 50%
+		margin-top: -3px 
+		width: 11px
+		height: 6px
+		display: block 
+		background: url(../i/filterNavArrows.png) 0px 0px no-repeat  
+.openStatSublist
+	background: #EBEBF3
+	&:after
+		background-position: 0px -6px 
+.statisticNav__sublist
+	background: #EBEBF3
+	padding-left: 20px 
+	display: none
+	li
+		font-size: 1.0em 
+		a
+			color: #404051 

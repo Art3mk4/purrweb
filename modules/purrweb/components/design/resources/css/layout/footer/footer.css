@@ -1,0 +1,26 @@
+#footer {
+  height: 60px;
+  margin-top: -60px;
+  padding: 0px 3% 0px 17%;
+  overflow: hidden;
+}
+
+#copyright {
+  float: left;
+  font-size: 1.4em;
+  line-height: 60px;
+}
+#copyright a {
+  text-decoration: underline;
+  color: #00A3D8;
+}
+
+#developers {
+  float: right;
+  line-height: 60px;
+  font-size: 1.4em;
+}
+#developers a {
+  text-decoration: underline;
+  color: #00A3D8;
+}

@@ -1,0 +1,960 @@
+@import compass/css3
+#viewFieldSetContainer
+	margin-right: 0px 
+#viewFieldSetContainer_one_column
+	margin-right: 10px 
+.viewFieldSet__col
+	max-width: 500px
+	min-width: 200px  
+	margin-right: 7% 
+	float: left
+	width: 40% 
+.viewFieldSet
+	margin-bottom: 25px 
+.viewFieldSet__title
+	font-size: 1.8em
+	text-transform: uppercase 
+	margin-bottom: 25px
+	color: #337DBE
+	display: inline-block
+	position: relative
+	&:after
+		content: ""
+		width: 11px
+		height: 6px
+		display: block
+		margin-left: 15px 
+		background: url(../i/filterNavArrows.png) 0px 0px no-repeat
+		position: absolute
+		left: 100%
+		top: 8px   
+.m-openViewFieldSet
+	&:after
+		background-position: 0px -6px  
+.viewFieldSet__content
+	border-bottom: 1px solid #CACAD9
+	display: none
+.viewFieldSet__content__row
+	overflow: hidden 
+	.viewFieldSet__content__label, .viewFieldSet__content__desc
+		font-size: 1.6em 
+		margin-bottom: 15px 
+	.viewFieldSet__content__label
+		width: 130px
+		float: left
+		color: #9797A5
+	.viewFieldSet__content__desc
+		color: black 
+		overflow: hidden
+		.changeBtn
+			font-size: 1.0em
+			color: black 
+			&:hover
+				text-decoration: none 
+		.chosen-container
+			width: 100%
+			margin-bottom: 15px
+			a
+				padding: 0 3%
+				width: 94%
+				font-size: 1.0em 
+				color: black !important
+				&:hover
+					text-decoration: none !important
+			.chosen-search
+				input
+					width: 93% 
+			.chosen-results
+				li
+					padding: 0px 8px 
+					font-size: 1.0em 
+.viewFieldSet__header
+	margin-bottom: 30px 
+.f-fieldSetText, .f-fieldSetComment, .f-fieldSetDate, .f-fieldSetEmail, .f-fieldSetUrl, .f-fieldSetPass, .f-fieldSetLimit
+	height: 35px
+	border: 1px solid #cacad9
+	width: 100%
+	padding: 0px 10px
+	outline: none  
+	font-size: 0.9em 
+	&:focus
+		border: 1px solid #26c9ff 
+.f-fieldSetText .f-fieldSetDate, .f-fieldSetEmail, .f-fieldSetUrl, .f-fieldSetPass, .f-fieldSetLimit
+	height: 35px
+.f-fieldSetComment
+	height: 55px
+	padding-top: 8px
+	padding-bottom: 8px
+	display: block
+	margin-bottom: 15px 
+#cancelFieldSetBtn
+	display: inline-block
+	vertical-align: top
+	font-size: 1.3em 
+#f_fieldSetList_chosen, #f_fieldSetCities_chosen, #AgeAnswerTemplate_question_id_chosen
+	width: 94% !important 
+	.chosen-single
+		padding: 0px 10px
+		width: 100%
+		font-size: 1.0em
+		line-height: 30px
+		white-space: nowrap
+		-ms-text-overflow: ellipsis 
+		text-overflow: ellipsis 
+		overflow: hidden
+		span
+			white-space: nowrap
+			-ms-text-overflow: ellipsis 
+			text-overflow: ellipsis 
+	.chosen-results li
+		font-size: 1.0em
+	.chosen-drop
+		width: 105.7%
+		top: auto
+		bottom: 100%
+		margin-bottom: 4px
+#f_fieldSetCities_chosen
+	margin-bottom: 15px  
+.fieldSet__form
+	.viewFieldSet__content__label
+		width: 25% 
+	.viewFieldSet__content__desc
+		width: 75%
+		float: left
+		overflow: visible 
+	.viewFieldSet__content__label, .viewFieldSet__content__desc 
+		margin-bottom: 0px
+	.viewFieldSet__content__row
+		margin-bottom: 15px
+		height: 37px
+		overflow: visible     
+		clear: both    
+		.base__cityItem
+			line-height: 30px
+			margin-bottom: 0 
+			.i-deleteItem
+				top: 7px
+.m-viewFieldSet__rowCities
+	margin-bottom: 0 
+.base__cityItem
+	font-size: 0.9em
+	padding-left: 10px !important  
+	&:hover
+		background: #ebf3f4 	
+// Create question
+.createQuestion__header
+	margin-bottom: 20px 
+.createQuestionContent
+	border-bottom: 0 
+	display: block 
+.f-textFields
+	height: 35px
+	border: 1px solid #cacad9
+	padding: 0px 10px
+	font-size: 1.4em
+	&:focus
+		border: 1px solid #26c9ff
+.f-textareaFields
+	border: 1px solid #cacad9
+	padding: 8px 10px
+	font-size: 1.4em  
+	&:focus
+		border: 1px solid #26c9ff
+.questionContent
+	overflow: hidden
+	margin-right: -50px 
+.createQuestion__col
+	max-width: 500px
+	min-width: 200px
+	margin-right: 7%
+	float: left
+	width: 40%
+#f-questCodeTypeCheckbox
+	width: 150px
+.createQuestion__row__col
+	overflow: hidden
+.partQuotaContent
+	float: right
+	line-height: 35px
+	input
+		margin-right: 10px 
+	label
+		font-size: 1.6em
+.createQuestion__row
+	margin-bottom: 12px
+#f-questNameTypeCheckbox, #f-questCommentTypeCheckbox
+	width: 94% 
+	height: 80px 
+.createAnswers__table
+	table-layout: fixed 
+	thead
+		tr
+			th
+				color: #9797a5
+				font-size: 1.6em
+				height: 20px 
+				&:nth-child(1)
+					width: 75px
+				&:nth-child(2)
+					width: 50px
+				&:nth-child(3)
+					width: 70px
+				&:nth-child(4)
+					width: 20px  
+	tbody
+		tr
+			height: 50px 
+.addAnswerBtn
+	width: 37px
+	height: 37px
+	background: #96BD3E url(../i/comliteIco.png) center center no-repeat
+	margin-right: 8px
+	margin-top: 1px  
+.deleteAnswerBtn
+	width: 37px
+	height: 37px  
+	background: #DFDFD0 url(../i/deleteIco.png) center center no-repeat
+	margin-top: 1px
+.f-codeAnswer
+	width: 62px
+.f-nameAnswer
+	width: 99px 
+#f_choseTypeAnswer_chosen
+	width: 127px !important
+	.chosen-single
+		padding-right: 10%
+		height: 35px  
+	.chosen-drop
+		width: 101.7% 
+	.chosen-results
+		li
+			white-space: nowrap
+			padding: 0px 10px 
+.f-answerType
+	width: 110px 
+#f_choseTypeQuestion_chosen
+	width: 300px !important
+	margin-bottom: 50px  
+	.chosen-single
+		padding: 0px 10px 
+		width: 94% 
+	.chosen-drop
+		width: 100.7% 
+	.chosen-results
+		li
+			padding: 0px 10px
+.viewFieldSet__enable
+	display: block !important 
+.mainContent__header
+	.systemMessage
+		font-size: 1.8em
+		margin-left: 30px
+		padding: 0 20px
+		height: 40px
+		line-height: 40px   
+		background: #ebf3f4  
+		display: inline-block
+		vertical-align: top   
+		.i-closeMessage
+			display: inline-block
+			width: 8px
+			height: 40px  
+			background: url(../i/deleteIco.png) center center no-repeat
+			margin-left: 30px
+			cursor: pointer 
+	.systemMessage.error
+		background: #E35F5B
+		color: #FFF  
+.alert
+	display: none
+.i-sortArrow
+	font-style: normal 
+#viewMenu 
+	overflow: hidden
+	width: 500px  
+.chosen-results
+	max-height: 180px 
+	overflow-y: scroll
+	li
+		cursor: pointer
+.currentPlaceRow
+	height: 88px
+	border: 1px solid #90EAFA  
+.moveRow
+	cursor: move
+.tableSortBtns
+	display: none
+	vertical-align: top
+.tableActionBtns
+	display: inline-block
+	vertical-align: top
+.tableViewContainer
+	position: relative
+#ui-datepicker-div
+	background: #FFF
+	width: 200px - 12px 
+	padding: 6px 6px
+	border: 1px solid #8ec1d7 
+	margin-top: 4px 
+	display: none
+	.ui-state-disabled
+		+opacity(0.5) 
+.ui-datepicker-title
+	color: #247eb5
+	font: 700 1.4em 'PT Sans Caption', sans-serif
+	text-align: center
+.ui-datepicker-calendar
+	width: 100% 
+	thead
+		tr
+			th
+				font: 400 1.2em 'PT Sans Caption', sans-serif
+				text-align: center
+				padding: 5px 5px 
+	tbody
+		tr
+			td
+				text-align: center  
+				padding: 0px 
+				a
+					font-size: 1.2em 
+					color: #247eb5
+					display: block
+					font-weight: 400 
+	.ui-state-highlight
+		background: #247eb5
+		color: white  
+.ui-datepicker-header
+	margin-bottom: 6px 
+	position: relative
+.ui-datepicker td a
+	line-height: 26px
+.ui-datepicker-prev, .ui-datepicker-next
+	position: absolute
+	width: 12px
+	height: 9px  
+	background: url(../i/ui-calendar-arrows.png) 0 0px no-repeat 
+	display: block
+	top: 4px 
+	span
+		display: none
+.ui-datepicker-next
+	background-position: -12px 0px !important 
+	right: 8px 
+.ui-datepicker-prev
+	left: 8px 
+.ui-datepicker td span
+	font-size: 1.2em
+#reportClient, #reportPoll, .m-quoteEditForm, .m-editFakeCallForm, .m-editStatPollForm, .m-accountEditForm
+	overflow: hidden
+	min-height: 500px 
+#exportClient, #importClient, #reportClient, #deleteClient
+	margin-right: -50px 
+	.chosen-container
+		width: 100% !important
+		margin-bottom: 15px 
+		a
+			padding: 0 3%
+			width: 94%
+		.chosen-search
+			input
+				width: 94% 
+		.chosen-results
+			li
+				padding: 0px 8px 
+.startProgress
+	border: none
+	height: 30px
+	margin-bottom: 11px !important
+	cursor: pointer
+#startProgress
+	border: none
+	height: 39px
+	margin-bottom: 15px !important
+.progress__message, #progress__message
+	margin-bottom: 15px 
+	p
+		font-size: 1.5em
+		margin-bottom: 12px  
+#progress__link
+	display: inline-block
+	font-size: 1.3em  
+.stopProgress
+	height: 30px
+	padding: 0px 17px !important
+	margin-right: 18px
+	line-height: 30px
+	border: 0  
+	vertical-align: top
+	display: inline-block
+	font-size: 1.3em
+.stopProgress
+	background: #388696
+	color: white
+	margin-bottom: 15px 
+	&:hover
+		background: #1ca6b0 
+.uploadFileBtn
+	display: inline-block
+	vertical-align: top
+	width: 270px
+	-ms-text-overflow: ellipsis 
+	text-overflow: ellipsis 
+	input  
+		font-size: 1.4em 
+		cursor: pointer
+.ui-progressbar
+	margin-bottom: 15px
+	border: 0 
+	border-bottom: 1px solid #388696
+	+border-radius(0px)
+	height: 30px 
+	.ui-progressbar-value
+		background: #388696
+		+border-radius(0px)
+		border-right: 0  
+.m-moreOptions
+	.chosen-drop
+		top: auto
+		bottom: 100%
+		margin-bottom: 4px  
+.mce-tinymce
+	margin-bottom: 15px !important 
+.viewFieldSet__content__desc
+	a
+		color: #337dbe
+		&:hover
+			text-decoration: underline 
+.m-jumpFiledSetForm
+	min-height: 600px 
+.createQuestionForm
+	display: inline-block
+	vertical-align: top
+	.chosen-container
+		vertical-align: top
+		width: 200px !important
+		margin-right: 20px  
+		.chosen-single 
+			font-size: 1.3em 
+			height: 30px			
+.tableSub__title
+	font-size: 1.8em 
+	margin-bottom: 20px 
+.quoteLink
+	display: inline-block
+	vertical-align: top
+	font-size: 1.3em 
+	color: white
+	height: 30px
+	margin-right: 18px  
+	margin-bottom: 15px 
+.quoteLink.changeBtn
+	color: black 
+.addRelationList
+	font-size: 14px 
+.relationList
+	margin-bottom: 15px  
+	.chosen-container 
+		width: 300px !important 
+		margin-right: 18px 
+		.chosen-search input
+			width: 92% !important 
+.m-relationList
+	min-height: 400px 
+.itemRelationList
+	display: block
+.viewFieldSet__content__label
+	p
+		margin-bottom: 15px 
+.m-editQuestionForm
+	margin-right: 50px !important
+	float: left
+	overflow: visible !important
+	width: 45% 
+	.viewFieldSet__col
+		width: 99% 
+#typeAnswers
+	overflow: hidden
+	padding-top: 67px 
+	min-height: 450px
+	.viewFieldSet__title
+		margin-bottom: 24px !important 
+	.tableView
+		margin-bottom: 0 !important 
+#reportPoll
+	overflow: hidden
+	margin-right: -50px
+	.viewFieldSet__content__row
+		.viewFieldSet__content__desc
+			position: relative
+			.ui-datepicker-trigger
+				position: absolute
+				display: block
+				max-width: 100% 
+				right: 5px
+				top: 10px 
+				cursor: pointer    
+		&:first-child
+			.viewFieldSet__content__desc
+				&:after
+					display: none
+#clearFaceData
+	overflow: hidden
+#createFaceDataBtn, 
+	float: right
+	margin-right: 0 !important
+#clearFaceDataBtn
+	border: none 
+	margin-bottom: 15px 
+.m-changeStatus
+	min-height: 135px !important 
+	float: right
+	width: 45%
+	margin-left: 50px  
+	.actionActiveBtn
+		margin-bottom: 30px 
+.m-monitorClient__table
+	overflow: hidden
+.m-operatorStat__table
+	margin-bottom: 30px 
+.m-statQuoteInfo
+	.viewFieldSet__content__label
+		width: 350px 
+.m-quteModeForm
+	min-height: 200px 
+.otherPage___row
+	display: none 
+	opacity: 0.5 !important
+	border: 1px dashed #dbdbea 
+	position: relative
+	&:after
+		content: "Строка с другой страницы"
+		position: absolute
+		top: 50%
+		left: 50%
+		font-size: 3.0em
+		margin-left: -175px
+		margin-top: -22px
+		background: #FFF     
+.m-active
+	background: #E35F5B
+	color: #FFF 
+	&:hover
+		background: darken(#E35F5B, 10%) 
+.fakeСalls__text
+	font-size: 1.5em 
+.cke
+	margin-bottom: 15px !important 
+.viewFieldSet__content__desc
+	.actionDefaultBtn
+		vertical-align: top
+		font-size: 0.9em
+		margin-left: 15px  
+		cursor: pointer
+.f-addAnswerId
+	font-size: 1.7em
+	width: 60%
+.f-addAnswerCod
+	width: 79% 
+	font-size: 1.7em 
+.f-answerTitle
+	width: 85% 
+.f-addAnswerType, .f-addAnswerAgeFrom, .f-addAnswerAgeTo
+	font-size: 1.7em 
+#typeAnswers
+	margin-bottom: 50px 
+.f-addAnswerAgeFrom, .f-addAnswerAgeTo
+	width: 60%
+.saveAnswerRowContainer
+	display: none
+.tableView__subRow
+	.f-fieldSetText
+		display: none
+#subQuestionTable
+	overflow: hidden
+	margin-top: 82px 
+	.tableView
+		margin-bottom: 0 
+#recordArchiveAddContainer
+	.viewBtn
+		font-size: 1.4em 
+	.chosen-single
+		height: 29px
+	.chosen-container
+		margin-right: 15px
+	.actionActiveBtn
+		display: inline-block
+		vertical-align: top
+.error
+	.chosen-drop, .chosen-single
+		border: 1px solid #D83C00 !important 
+.monitorTab__list
+	border-bottom: 1px solid #dddddd
+	margin-bottom: 20px
+	li
+		vertical-align: top
+		display: inline-block
+		height: 39px
+		font-size: 1.33em
+		line-height: 39px
+		border-top: 1px solid transparent
+		border-right: 1px solid transparent
+		border-left: 1px solid transparent
+		border-bottom: 1px solid transparent
+		padding: 0px 12px
+		position: relative
+		top: 1px
+		outline: none
+		a
+			color: #0085ee
+			outline: none
+	.ui-state-active
+		border-top: 1px solid #dddddd
+		border-right: 1px solid #dddddd
+		border-left: 1px solid #dddddd
+		background: white
+		a
+			border-bottom: 0
+#answerTemplatesTable
+	overflow: hidden
+.m-selectAnswerEditForm
+	.f-fieldSetText 
+		width: 92% 
+.m-cititesEditForm
+	display: inline-block
+	vertical-align: top
+	width: 45%
+	overflow: visible !important
+	.viewFieldSet__col
+		width: 93% 
+#exportClient
+	margin-top: 67px 
+	margin-left: 100px 
+	margin-bottom: 15px 
+#deleteClient
+	margin-left: 100px 
+#importClient, #deleteClient, #PollTemplate_type_chosen
+	.chosen-drop
+		top: auto 
+		bottom: 100%
+		margin-bottom: 4px  
+#importClient
+	.viewFieldSet__col
+		&:first-child
+			margin-bottom: 25px 
+.m-statOperatorSort
+	.sortBtn
+		width: auto 
+.countRows
+	float: right
+	font-size: 1.4em 
+.dialCall
+	p
+		color: #e35f5b
+.planCall
+	p
+		color: #f48e5e  	
+.scheduleStartBtn
+	font-size: 0.9em
+.m-scheduleInfo
+	margin-bottom: 70px 
+.archive__label
+	font-size: 1.4em
+	margin-right: 5px 
+	line-height: 35px
+.archiveForm__col
+	display: inline-block
+	vertical-align: top
+	position: relative
+	.ui-datepicker-trigger
+		position: absolute
+		right: 15px
+		top: 8px  
+.a-downloadLink
+	font-size: 1.5em
+	color: #0085B2
+	margin-bottom: 5px
+	display: block 
+.playlist
+	margin-bottom: 10px 
+	li
+		&:before
+			display: block
+			content: ""
+			position: absolute
+			top: 5px
+			left: 10px  
+			width: 18px
+			height: 18px
+			background: url(../i/icon_play.png) 0px 0px no-repeat
+			z-index: 1 
+	.sm2_playing 
+		&:before
+			background: url(../i/icon_pause.png) 0px 0px no-repeat
+#sm2-container
+	position: absolute
+	left: -9999px 
+.countNotification
+	display: inline-block
+	padding: 0px 6px
+	background: #3ccbff
+	height: 32px
+	line-height: 32px
+table.tableView
+	td
+		display: table-cell
+		margin-bottom: 0
+		width: auto    
+		padding: 12px 0px
+		&:first-child
+			padding-left: 50px 
+	tr
+		th
+			border-bottom: 1px solid #dbdbea
+			vertical-align: top
+			padding: 12px 0px
+			&:first-child
+				padding-left: 50px !important
+	tbody
+		tr
+			&:nth-child(even)
+				background: #EFF8FA
+			&:hover
+				background: #ebf3f4
+table.m-operatorStat__table
+	tr
+		td
+			cursor: default
+.m-addOptionBtn
+	background: #dfdfd0 url(../i/addIco.png) center center no-repeat
+.m-addOptionsInSelect
+	.chosen-container
+		width: 88% !important
+	.m-addOptionBtn
+		float: right
+.m-fieldListAnswer
+	width: 84%
+	font-size: 1.4em
+	margin-bottom: 0
+	height: 180px 
+.clearDataBtnContainer
+	position: relative
+	.actionDefaultBtn
+		margin-right: 0 !important
+	.clearDataList__btn
+		display: inline-block
+		vertical-align: top
+		width: 30px
+		height: 30px
+		margin-left: -3px
+		border-left: 1px solid #575748
+		background: #dfdfd0  
+		cursor: pointer
+		&:hover
+			background: #CACAB2 
+		&:before
+			content: ""
+			display: block
+			background: url(../i/arrowsDropdownList.png) 0px -10px no-repeat
+			width: 9px
+			height: 6px  
+			margin: 0 auto
+			margin-top: 11px 
+	.chosen-container
+		vertical-align: top 
+		width: 60%
+		background: #FFF   
+		.chosen-drop
+			width: 160% 
+		.chosen-single
+			height: 28px 
+		.chosen-search
+			display: none
+.clearStatusTooltip.actionDefaultBtn
+	padding: 0px 15px !important
+	margin-left: -1px 
+	background: #dfdfd0 url(../i/bootstrap/img/glyphicons-halflings.png) -232px -16px no-repeat 
+.clearData__list
+	width: 170px
+	li
+		font-size: 1.4em  
+.tooltipBtn
+	background: #dfdfd0 url(../i/bootstrap/img/glyphicons-halflings.png) -376px 7px no-repeat 
+	width: 30px 
+	&:hover
+		background: #CACAB2 url(../i/bootstrap/img/glyphicons-halflings.png) -376px 7px no-repeat 
+.m-active.tooltipBtn
+	background: #e35f5b url(../i/bootstrap/img/glyphicons-halflings-white.png) -376px 7px no-repeat !important
+.tableContainerVisibleRow
+	.tableView__subRow
+		overflow: visible
+	.a-changeFromList
+		border-bottom: 1px dashed #0085b2 
+		display: inline-block
+		&:hover
+			text-decoration: none 
+	.chosen-container
+		clear: both
+		width: 90%
+		background: #FFF  
+		display: none
+		.chosen-single
+			color: black !important 
+			font-size: 1.0em
+			&:hover
+				text-decoration: none 
+		.chosen-search
+			display: none
+	.chosen-results
+		li
+			font-size: 1.0em 
+.m-visibleConitaner
+	min-height: 500px 
+.chosen-choices
+	font-size: 0.9em
+	line-height: 14px 
+	border: 1px solid #cacad9
+	width: 72%
+	padding: 4px 20% 4px 8%
+	text-overflow: ellipsis
+	overflow: hidden
+	position: relative
+	min-height: 28px - 8px 
+	&:after
+		content: ""
+		position: absolute
+		display: block
+		right: 13px
+		top: 12px
+		width: 11px
+		height: 6px
+		background: url(../i/filterNavArrows.png) 0px 0px no-repeat
+	.search-field
+		input
+			border: none 
+			width: 25px 
+			height: 16px 
+			text-overflow: ellipsis
+			font-size: 1.3em
+			cursor: pointer 
+.chosen-with-drop
+	.chosen-choices
+		border: 1px solid #26c9ff
+.search-choice
+	position: relative
+	margin: 0px 3px 3px 0px  
+	padding: 1px 20px 1px 5px
+	border: 1px solid #aaa
+	background-color: #dfdfd0
+	background-clip: padding-box
+	color: #333
+	line-height: 13px
+	cursor: default	
+.search-choice-close
+	position: absolute
+	top: 2px
+	right: 3px
+	display: block
+	width: 9px
+	height: 9px
+	background: url(../i/deleteIco.png) -3px -3px no-repeat
+.result-selected
+	opacity: 0.35 
+.chosen-container-single-nosearch
+	.chosen-search 
+		display: none
+.archivePollTemplateBtn
+	background: #dfdfd0 url(../i/bootstrap/img/glyphicons-halflings.png) -161px -16px no-repeat
+	&:hover
+		background: #cacab2 url(../i/bootstrap/img/glyphicons-halflings.png) -161px -16px no-repeat
+#loopStartProgress, #loopReset
+	font-size: 0.9em
+	float: right
+#loopReset
+	margin-right: 0 !important 
+.m-pollControl__city__table
+	td
+		&:first-child
+			padding-left: 16px !important 
+	td.tableView__col
+		position: relative
+		top: 0
+		left: 0  
+.noExist__checkbox
+	margin-bottom: 20px 
+	font-size: 1.4em 
+.errorNoFound__title
+	font: 4.5em "PT Sans", sans-serif
+	margin-top: 200px
+	margin-bottom: 20px  
+.error
+	p
+		font: 3em "PT Sans", sans-serif
+.errorNoFound__title, .error
+	color: #999999
+	text-align: center
+.chosen-container.error
+	text-align: left 
+.genericCompany__form
+	display: inline-block
+	vertical-align: top
+	label
+		display: inline-block
+		vertical-align: top
+		color: #9797A5
+		font-size: 1.4em
+		margin-right: 5px 
+		width: 80px 
+	.f-fieldSetText
+		width: 200px
+		display: inline-block
+		vertical-align: top
+		margin-right: 5px 
+		height: 28px 
+		font-size: 1.2em 
+.m-genericContainer
+	.mainContent__actionBtns
+		display: inline-block
+.m-group__table
+	.tableView__subRow__col
+		a
+			&:hover
+				text-decoration: none
+			span
+				&:hover
+					text-decoration: underline 
+.m-groupTable__titleRow
+	background: #cadbe3 !important 
+	&:hover
+		background: #cadbe3 
+#PollTemplate_speedType_chosen, #PollTemplate_strategyType_chosen, #PollTemplate_type_chosen
+	.chosen-search
+		display: none
+.date__container
+	position: relative
+	display: inline-block
+	margin-right: 18px 
+	width: 210px 
+	img
+		position: absolute
+		display: block
+		max-width: 100%
+		right: 5px
+		top: 10px
+		cursor: pointer
+.m-expertBtn
+	font-size: 1.2em
+	margin-bottom: 15px !important  
+	display: inline-block
+.viewFieldSet__content
+	form
+		.f-fieldSetText, .f-fieldSetComment, .f-fieldSetDate, .f-fieldSetEmail, .f-fieldSetUrl, .f-fieldSetPass, .f-fieldSetLimit
+			width: 92% 
+.m-visibleOverflow
+	overflow: hidden !important
+	height: auto !important
+.m-moderateSelect
+	.chosen-drop
+		top: auto !important
+		bottom: 100% !important
+		margin-bottom: 5px 

@@ -1,0 +1,24 @@
+@font-face {
+  	font-family: 'PT Sans';
+  	src: url('pts55f.eot');
+  	src: url('pts55f.eot?#iefix') format('embedded-opentype'),
+       	url('pts55f.woff') format('woff'),
+       	url('pts55f.ttf')  format('truetype'),
+       	url('pts55f.svg#f39585f1b656e5f9297b79e526233403') format('svg'); 
+       
+  	font-style:   normal;
+  	font-weight:  400;
+}
+
+@font-face {
+  	font-family: 'PT Sans Caption';
+  	src: url('ptc75f.eot');
+  	src: url('ptc75f.eot?#iefix') format('embedded-opentype'),
+    	url('ptc75f.woff') format('woff'),
+    	url('ptc75f.ttf')  format('truetype'),
+    	url('ptc75f.svg#29cad5673275be89ce4ffe60ff4bb911') format('svg');
+       
+  	font-style:   normal;
+  	font-weight:  700;
+}
+

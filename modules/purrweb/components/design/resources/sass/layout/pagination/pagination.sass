@@ -1,0 +1,33 @@
+@import compass/css3
+.pagination
+	text-align: center
+	margin-bottom: 30px 
+.pagination__prevBtn, .pagination__nextBtn
+	font: 1.4em 'Arial', sans-serif 
+	display: inline-block
+	color: #0085B2
+	position: relative
+	top: -2px 
+.pagination__prevBtn
+	margin-right: 25px
+.pagination__nextBtn
+	margin-left: 25px 
+.pagination__prevBtn.disabled, .pagination__nextBtn.disabled
+	color: #A8A8B7 
+.pagination__list
+	display: inline-block	
+	li
+		display: inline-block
+		font-size: 1.8em
+		+border-radius(100px)
+		margin-left: 2px
+		margin-right: 2px  
+		a
+			color: #0085B2 
+			display: block
+			padding: 0px 6px 
+			height: 22px  
+	.active
+		background: #96BD3E 
+		a
+			color: white 

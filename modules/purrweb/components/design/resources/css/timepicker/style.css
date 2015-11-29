@@ -1,0 +1,93 @@
+/* timepicker */
+.time-container{
+    position: relative;
+    display: inline-block;
+}
+
+.time-container input[rel="time"]{
+  width: 50px;
+  padding-right: 20px;
+}
+
+.select-time{
+  cursor: pointer;  
+  position: absolute;
+  right: 5px;
+  top: 9px;
+}
+
+@-moz-document url-prefix() {
+  .select-time{
+    padding-top: 0;
+  }
+}
+
+.time{        
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 5px;
+  background: #fff;
+  border: 1px solid #CCC;
+  text-align: center;
+  border-spacing: 2px;
+  padding: 0;
+  z-index: 2;
+  width: 80px
+}
+
+.time .container{
+  position: relative;
+  overflow: hidden;
+}
+
+
+.time .up, .time .down{
+  height: 10px;
+  left: 0;
+  right: 0;
+  opacity: 1;  
+}
+
+.time .up{
+  top: 0;
+  background: transparent url(../../i/clock_up.png) no-repeat center center;
+}
+
+.time .down{
+  bottom: 0;
+  background: transparent url(../../i/clock_down.png) no-repeat center center;
+}
+
+
+.time .up:hover, .time .down:hover{
+  background-color: #e3e3e3;
+  opacity: .8;
+}
+
+.time > *{
+  width: 80px;
+}
+
+.time table{
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.time td a{
+  margin: 0 !important;
+  padding: 3px 0;
+  width: 80px;
+  display: block;
+  text-align: center;
+}
+
+.time td a.current{
+  font-weight: bold;
+}
+
+.time td a:hover{
+  background: #d3edee;
+}

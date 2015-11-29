@@ -1,0 +1,309 @@
+.filterContainer {
+  margin-bottom: 15px;
+}
+
+.actionActiveBtn, .actionDefaultBtn, .addBtn {
+  height: 30px;
+  padding: 0px 14px !important;
+  margin-right: 18px !important;
+  font-size: 1.3em;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.actionDefaultBtn {
+  color: #575748;
+  background: #DFDFD0;
+}
+.actionDefaultBtn:hover {
+  background: #cacab2;
+}
+
+.actionActiveBtn, .addBtn {
+  color: #FFF;
+  background: #96BD3E;
+}
+
+.actionActiveBtn:hover, .addBtn:hover {
+  background: #839F34;
+}
+
+.actionBtn, .addBtn {
+  position: relative;
+}
+.actionBtn:after, .addBtn:after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 5px;
+  background: url(../i/arrowsDropdownList.png) -1px -11px no-repeat;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+}
+
+.action__list, .actionAdd__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+  border: 1px solid #26C9FF;
+  width: 190px;
+  background: white;
+  z-index: 100;
+  display: none;
+}
+.action__list li, .actionAdd__list li {
+  text-align: left;
+  height: 30px;
+}
+.action__list li a, .actionAdd__list li a {
+  line-height: 30px;
+  display: block;
+  font-size: 1em;
+  color: #3F3F51;
+  padding: 0px 16px;
+  height: 100%;
+}
+.action__list li a:hover, .actionAdd__list li a:hover {
+  background: #DBDBEA;
+}
+
+.action__list__sortLink:after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 7px;
+  background: url(../i/arrowsDropdownList.png) -1px -18px no-repeat;
+  position: relative;
+  top: -1px;
+  margin-left: 12px;
+}
+
+.m-operatorStatus {
+  margin-top: 3px;
+}
+
+.filter {
+  position: relative;
+  margin-bottom: 20px;
+}
+.filter .action__list {
+  top: 28px;
+}
+.filter .action__list li {
+  font-size: 1.5em;
+}
+
+.filterForm {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter__link {
+  display: inline-block;
+  font-size: 1.8em;
+  color: #0085B2;
+  margin-right: 15px;
+  line-height: 30px;
+}
+.filter__link:before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  background: url(../i/arrowsDropdownList.png) -1px -27px no-repeat;
+  margin-right: 9px;
+  position: relative;
+  top: 2px;
+}
+.filter__link:after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: url(../i/arrowsDropdownList.png) -1px -10px no-repeat;
+  position: relative;
+  top: -1px;
+  margin-left: 10px;
+}
+
+.f-filterByKey, #f-dateStart, #f-dateEnd {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #CACAD9;
+  padding: 0 15px;
+  font-size: 1.3em;
+  outline: none;
+  margin-right: 8px;
+  vertical-align: top;
+  display: inline-block !important;
+}
+.f-filterByKey:focus, #f-dateStart:focus, #f-dateEnd:focus {
+  border: 1px solid #26c9ff;
+}
+
+#f_filterTypeList_chosen, #f_filterFlagList_chosen, #f_filterKeyList_chosen {
+  width: 175px !important;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.typeListContainer {
+  display: none;
+  vertical-align: top;
+}
+
+.addFilterKey {
+  width: 32px;
+  height: 32px;
+  background: #96BD3E url(../i/comliteIco.png) center center no-repeat;
+  margin-right: 8px !important;
+  vertical-align: top;
+  margin-left: 8px !important;
+}
+
+#addDataForm {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.deleteFilterKey {
+  width: 32px;
+  height: 32px;
+  background: #DFDFD0 url(../i/deleteBtn.png) center center no-repeat;
+  vertical-align: top;
+}
+
+.filterForm__col, .filterForm__containerElements {
+  vertical-align: top;
+  display: none;
+}
+.filterForm__col label, .filterForm__containerElements label {
+  line-height: 37px;
+  font-size: 1.4em;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filterValue__text {
+  font-size: 1.4em;
+  display: inline-block;
+  line-height: 37px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.i-deleteFilter {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url(../i/deleteIco.png) -2px -2px no-repeat;
+}
+
+.mainContent__actionBtns {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.sortContent {
+  float: right;
+}
+.sortContent label {
+  font-size: 1.3em;
+  line-height: 30px;
+  margin-right: 12px;
+}
+.sortContent .sortBtn {
+  font-size: 1.3em;
+  width: 150px;
+  padding: 0 35px 0px 10px;
+  height: 30px;
+  color: black;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.sortContent .sortBtn i {
+  margin-left: 5px;
+  font-style: normal;
+  display: none;
+  width: 11px;
+  height: 14px;
+}
+
+.sortContainer {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.sortBtn:after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 13px;
+  top: 50%;
+  margin-top: -4px;
+  width: 15px;
+  height: 14px;
+  background: url(../i/sort_ico.png) 0px 0px no-repeat;
+}
+
+.chosen-results li {
+  white-space: nowrap;
+}
+
+.sort__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 6px;
+  border: 1px solid #26C9FF;
+  width: 98%;
+  background: white;
+  z-index: 100;
+  display: none;
+}
+.sort__list li {
+  text-align: left;
+  height: 40px;
+  font-size: 1.5em;
+}
+.sort__list li a {
+  line-height: 40px;
+  display: block;
+  font-size: 1em;
+  color: #3F3F51;
+  padding: 0px 16px;
+  height: 100%;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sort__list li a:hover {
+  background: #DBDBEA;
+}
+
+.mainContent__header .action__list li {
+  font-size: 1.5em;
+}
+
+.filterValue__saveText {
+  cursor: pointer;
+  color: #4b7fc7;
+}
+
+.m-sortUp i {
+  display: inline-block !important;
+  background: url(../i/arrowSort.png) 0px 1px no-repeat;
+}
+
+.m-sortDown i {
+  display: inline-block !important;
+  background: url(../i/arrowSort.png) -10px 1px no-repeat;
+}

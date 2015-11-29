@@ -1,0 +1,89 @@
+@import compass/css3
+
+.m-overlay
+	overflow: hidden
+	#popupContainer, .popupContainer
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 9999
+		background: url(../i/overlayPopup.png) 0px 0px
+		overflow-x: auto
+		overflow-y: auto
+.m-overlayQuote
+	overflow: hidden
+	.popupContainerQuote
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 9999
+		background: url(../i/overlayPopup.png) 0px 0px
+		overflow-x: auto
+		overflow-y: auto
+.popup
+	display: none
+.deleteOperatorPopup, .answersPopup, .addOptionPopup, .createAllQuotes
+	margin: 0 auto
+	margin:
+		top: 200px	
+	position: relative
+	top: 0
+	left: 0
+	background: #6FC0CC
+	padding: 23px 33px 26px 33px
+	text-align: center
+	.a-popup__close
+		position: absolute
+		right: 6px
+		top: 5px
+		display: block
+		height: 5px
+		width: 5px 
+		background: url(../i/arrowsDropdownList.png) -17px -19px no-repeat
+.deleteOperatorPopup
+	width: 342px - 33px - 33px
+.answersPopup
+	width: 433px - 33px - 33px
+.createAllQuotes
+	width: 342px - 33px - 33px
+.addOptionPopup
+	width: 280px
+	.f-fieldSetText
+		margin-bottom: 15px 
+.deleteOperatorPopup__msg
+	font-size: 1.8em
+	color: #FFF  
+	line-height: 22px
+	margin-bottom: 23px  
+.confirmDeleteBtn, .negativeDeleteBtn, .confirmAddOptionBtn, .confirmAddListAnswersBtn, .popupConfirmBtn
+	width: 74px
+	height: 37px
+	background: #FFF  
+	font-size: 1.4em 
+	display: inline-block
+	vertical-align: top
+	line-height: 37px  
+	&:hover
+		background: darken(#FFF, 10%)
+.confirmDeleteBtn, .confirmAddOptionBtn, .confirmAddListAnswersBtn, .popupConfirmBtn
+	margin-right: 15px !important
+.addAnswersList__form, .addOptionPopup
+	h3
+		font-size: 1.6em
+		color: white
+		text-align: left
+		margin-bottom: 8px
+	.f-fieldSetComment
+		height: 100px 
+		font-size: 1.3em 
+	.confirmDeleteBtn
+		margin-right: 15px
+	.negativeDeleteBtn, .confirmDeleteBtn, .confirmAddOptionBtn, .confirmAddListAnswersBtn
+		width: 100px 
+.addOptionPopup
+	h3, .negativeDeleteBtn, .confirmDeleteBtn, .confirmAddOptionBtn
+		font-size: 1.0em 

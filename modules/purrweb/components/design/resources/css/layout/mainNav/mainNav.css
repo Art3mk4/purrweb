@@ -1,0 +1,59 @@
+#mainNav {
+  float: left;
+  background: #388696;
+  padding-bottom: 9000px;
+  margin-bottom: -9000px;
+  width: 14%;
+}
+
+.mainNav__list li {
+  font-size: 1.8em;
+  overflow: hidden;
+}
+.mainNav__list li a {
+  color: white;
+  line-height: 45px;
+  display: block;
+  padding: 0 18px;
+  position: relative;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.openSubList a {
+  background: #609EAB;
+}
+.openSubList a:before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 45px;
+  position: absolute;
+  background: transparent;
+  left: 0;
+  top: 0;
+}
+
+.openSubList .mainNav__list__link:before {
+  background: #285b66;
+}
+
+.openSubList .mainNav__sublist {
+  display: block;
+}
+.openSubList .mainNav__sublist .active a:before {
+  background: #3ccbff;
+}
+
+.mainNav__sublist {
+  background: #609EAB;
+  display: none;
+}
+.mainNav__sublist li {
+  font-size: 1em;
+}
+.mainNav__sublist li a {
+  padding-left: 38px;
+}

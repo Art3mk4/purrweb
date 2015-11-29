@@ -1,0 +1,115 @@
+/* Common (start) */
+html, body, #wrapper {
+  height: 100%;
+}
+
+body > #wrapper {
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  font: 61% "PT Sans", sans-serif;
+}
+
+.m-login {
+  padding-top: 150px;
+}
+
+#loginForm {
+  width: 400px;
+  margin: 0 auto;
+  background: #FFF;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px 0px;
+  padding: 20px 0px 10px 0px;
+}
+
+.login__title {
+  font-size: 1.8em;
+  color: #65CA60;
+  margin-left: 44px;
+  margin-bottom: 10px;
+}
+
+.loginForm__row {
+  padding: 15px 40px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  overflow: hidden;
+}
+
+.focusElement {
+  background: #F6F6F6;
+  border-left: 4px solid #3CCBFF;
+  border-right: 4px solid #3CCBFF;
+}
+
+.autherror #log, .autherror #password {
+  border: 1px solid red;
+}
+
+#log, #password {
+  height: 34px;
+  width: 290px;
+  border: 1px solid #E2E2E2;
+  padding: 0px 10px;
+  font-size: 1.4em;
+}
+
+.m-rememberRow {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.m-rememberRow .loginForm__col {
+  line-height: 32px;
+  padding-left: 4px;
+}
+
+.loginForm__col {
+  float: left;
+}
+.loginForm__col label {
+  font-size: 1.3em;
+  margin-left: 5px;
+  color: #ADADAD;
+}
+
+#logPassButton {
+  float: right;
+  background: #65CA60;
+  border: 1px solid #47B240;
+  color: white;
+  -moz-box-shadow: #75d170 0 0 1px 0px inset;
+  -webkit-box-shadow: #75d170 0 0 1px 0px inset;
+  box-shadow: #75d170 0 0 1px 0px inset;
+  width: 80px;
+  height: 34px;
+  font-size: 1.6em;
+  margin-right: 4px;
+}
+
+#footer {
+  border-top: 2px solid gray;
+  height: 30px;
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 20px;
+  margin-top: -52px;
+}
+#footer p {
+  font-size: 1.3em;
+  float: left;
+}
+#footer p a {
+  color: #3CCBFF;
+}
+#footer small {
+  font-size: 1.3em;
+  float: right;
+}
+#footer small a {
+  color: #3CCBFF;
+}

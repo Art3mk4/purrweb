@@ -1,0 +1,105 @@
+/* Common (start) */
+html, body, #wrapper 
+	height: 100%
+body > #wrapper 
+	height: auto
+	min-height: 100%
+body
+	font: 61% 'PT Sans', sans-serif
+a
+	text-decoration: none
+#wrapper
+	overflow: hidden
+#layout
+	overflow: hidden
+	padding-bottom: 60px 
+	min-height: 600px 
+#mainContent
+	overflow: hidden
+	padding: 12px 40px 40px 40px 
+	position: relative
+#breadcrumb
+	margin-bottom: 15px 
+	p
+		font-size: 1.6em
+		a
+			color: #0085B2 
+.mainContent__title
+	font-size: 3.6em 
+	display: inline-block
+	cursor: pointer
+	&:after
+		display: inline-block
+		vertical-align: top
+		content: ""
+		background: url(../i/arrowsDropdownList.png) 0px 0px no-repeat
+		width: 15px
+		height: 10px
+		margin: 18px 0px 0px 10px 
+.emptyList__title
+	&:after
+		display: none
+.mainContent__header
+	margin-bottom: 15px 
+	position: relative
+#titleNav
+	position: absolute
+	top: 100%
+	left: 0
+	margin-top: 6px
+.titleNav__list
+	position: absolute	  
+	border: 1px solid #26c9ff
+	width: 190px
+	background: white
+	z-index: 100
+	li
+		font-size: 1.5em
+		height: 40px
+		a
+			line-height: 40px
+			display: block
+			font-size: 1em
+			color: #3f3f51
+			padding: 0px 16px
+			height: 100%
+			&:hover
+				background: #dbdbea 
+#tooltip 
+	position: absolute
+	z-index: 3000
+	background: #6FC0CC	
+	padding: 8px
+	opacity: 0.85
+	color: white
+	font-size: 1.4em
+	h3, div 
+		margin: 0
+#userBar
+	position: absolute
+	right: 20px
+	top: 15px
+	z-index: 100  
+.userBar__user, .userBar__logout
+	display: inline-block
+	vertical-align: top
+	font-size: 1.6em 
+.userBar__user
+	margin-right: 20px 
+.userBar__logout
+	color: #0085b2 
+/* Common (end) */
+
+@import mainNav/mainNav
+@import statisticNav/statisticNav
+
+@import header/header
+@import popups/popups
+@import footer/footer
+
+@import actionBtns/actionBtns
+@import pagination/pagination
+@import operatorsInfoTable/operatorsInfoTable
+@import dataOperatorForm/dataOperatorForm
+@import viewOperatorData/viewOperatorData
+@import imageUploader/imageUploader
